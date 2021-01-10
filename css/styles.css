@@ -105,7 +105,9 @@ padding-top: 0px;
 margin-top: 5%;
 }
 
-
+parallax-container {
+    color: white;
+}
 
 .parallax {
      /* 
