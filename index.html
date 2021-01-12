@@ -83,6 +83,36 @@ html, body {
         z-index: 5;
         background-color: black;
       }
+	  
+	  .pozicionim{
+		position: absolute; 
+		top: 45%; 
+		left: 30%;
+	  }
+	  
+	  .writings{
+		font-size: 40px;
+	  }
+	  
+		@media  screen and (max-width: 700px) {
+	  
+		  .pozicionim{
+			position: absolute; 
+			top: 15%; 
+			left: 5%;
+		  }
+		  
+		  .writings{
+			font-size: 1em;
+			margin-top : 5%;
+		  }
+		  
+		  .brand-logo{
+			left: 30% !important;
+		  }
+	  
+		}
+	  
 
     </style>
 
@@ -97,7 +127,7 @@ html, body {
       <nav style=" background-color: transparent !important; " >
         <div class="nav-wrapper">
           <a href="index.html" class="wow swing brand-logo">Tech & Solution</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger right">   <i class="large material-icons">menu</i>  </a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger right">   <i class="white-text large material-icons">menu</i>  </a>
           
           <ul id="nav-mobile" class="right hide-on-med-and-down">
     
@@ -165,9 +195,9 @@ html, body {
     <div class="col s12 writing-wall " style=" padding: 0px; ">
       <img alt=""  src="images/back.jpeg" width="100%"/>
 
-      <div class="center-align" style=" position: absolute; top: 45%; left: 30%;"  > <!-- style=" position: absolute; top: 45%; left: 30%;" -->
+      <div class="center-align pozicionim"  > <!-- style=" position: absolute; top: 45%; left: 30%;" -->
 
-        <span id="mywritings-onwall" style="font-size: 40px; " >  Technology breaks the walls </span>
+        <span id="mywritings-onwall writings" >  Technology breaks the walls </span>
         <br/>
         <a href="#about" style="padding-top: 20px; ">   <i class="large material-icons">expand_more</i>   </a> 
 
@@ -704,7 +734,8 @@ html, body {
 	*/
     wow.init();
 </script>
-			  
+
+  
 <!--  --> 
    <script src="js/jquery-2.2.3.min.js"></script>  
   
