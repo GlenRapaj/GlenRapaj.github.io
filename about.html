@@ -1,23 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title> Tech & Solutions </title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-         <!-- Scripts defer -->
-    <script src="https://immense-caverns-77674.herokuapp.com/js/app.js" ></script>
+    <title> Tech & Solutions </title>
 
-          <!-- Font Awesome Icons 
+    <!-- Scripts defer -->
+    <script src="https://immense-caverns-77674.herokuapp.com/js/app.js"></script>
+
+    <!-- Font Awesome Icons 
           <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
           -->
 
- <!-- Icons -->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    
+
     <!-- Styles 
     <link rel="stylesheet" href="https://immense-caverns-77674.herokuapp.com/css/app.css" >
 -->
@@ -27,648 +27,563 @@
     <link rel="icon" type="image/jpg" href="file://C:/Users/user/Desktop/images/coctail.jpg" />
 -->
 
-    <link rel="stylesheet" href="css/materialize.css"/>
-    <link rel="stylesheet" href="css/styles.css"/>
-	
-	<!-- Anime css libraria qe merret me animimet -->
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/materialize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Anime css libraria qe merret me animimet -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/site.css">
 
     <style>
+        html,
+        body {
+            min-height: 100%;
+        }
 
-html, body {
-  min-height: 100%;
-  }
+        hr {
+            width: 30%;
+            border: 1px solid rgba(4, 4, 151, 0.664);
+            margin-top: 20px;
+        }
 
-      hr {
-        width: 30%;
-        border: 1px solid rgba(4, 4, 151, 0.664);
-        margin-top: 20px;
-      }
+        p {
+            margin-top: 7%;
+        }
 
-      p {
-        margin-top: 7%;
-      }
+        .writing-wall {
+            position: relative;
+            text-align: center;
+            color: white;
+            /*  margin-top: -64px;   */
+        }
 
-      .writing-wall{
-         position: relative;  
-        text-align: center;
-        color: white;
-       /*  margin-top: -64px;   */
-      }
+        .custom-icon {
+            width: 20%;
+            margin-left: 5%;
+            margin-right: auto;
+            margin-top: 5%;
+        }
 
-		.custom-icon {
-			width: 20%;
-			margin-left: 5%;
-			margin-right: auto;
-			margin-top: 5%;
-		}
-		
-		.achivement-sub-container{
-			display : flex;
-			flex-direction : row ;
-		}
-		
-		
-		@media  screen and (max-width: 700px) {
-		
-			.parallax-container {
-				position: relative;
-				overflow: hidden;
-				height: 900px;
-			}
-			
-			.row-padding{
-				padding-top: 5%;
-			}
-			
-		}
+        .achivement-sub-container {
+            display: flex;
+            flex-direction: row;
+        }
 
+
+        @media screen and (max-width: 700px) {
+
+            .parallax-container {
+                position: relative;
+                overflow: hidden;
+                height: 900px;
+            }
+
+            .row-padding {
+                padding-top: 5%;
+            }
+
+        }
     </style>
 
-  </head>
-    <body>
+</head>
+
+<body>
 
 
 
- <!--  Fillon navbar  -->  <!-- rregullo linqet pushpin -->
- <div class="row " style="margin-bottom: 0px; ">       
+    <!--  Fillon navbar  -->
+    <!-- rregullo linqet pushpin -->
+    <div class="row " style="margin-bottom: 0px; ">
 
-      <nav >
-        <div class="nav-wrapper black">
-          <a href="index.html" class="brand-logo white-text ">Tech & Solutions</a>
-         <a href="#" data-target="mobile-demo" class="sidenav-trigger right">   <i class="white-text large material-icons">menu</i>  </a>
-		 
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-    
-            <li class="active white-text" ><a href="index.html"> Home </a></li>
-            <li><a class=" white-text " href="about.html"> ABOUT </a></li>
-            <li><a class=" white-text " href="portofolio.html"> PORTOFOLIO </a></li>
+        <nav>
+            <div class="nav-wrapper black">
+                <a href="index.html" class="brand-logo white-text ">Tech & Solutions</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"> <i
+                        class="white-text large material-icons">menu</i> </a>
+
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+                    <li class="active white-text"><a href="index.html"> Home </a></li>
+                    <li><a class=" white-text " href="about.html"> ABOUT </a></li>
+                    <li><a class=" white-text " href="portofolio.html"> PORTOFOLIO </a></li>
+                    <!-- Dropdown Trigger  -->
+                    <li><a class="dropdown-trigger white-text" href="#!" data-target="dropdown2"
+                            style=" height: 64px; "> Services </a></li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Dropdown Structure desktop -->
+        <ul id="dropdown2" class="dropdown-content">
+            <li><a href="services.html#Web-Development"> Web Development </a></li>
+            <li><a href="services.html#Web-Designe"> Web Designe </a></li>
+
+            <li class="divider"></li>
+
+            <li><a href="services.html#Fixing-Bugs"> Fixing Bugs </a></li>
+
+            <li class="divider"></li>
+            <li><a href="services.html#Sql-Queries"> Sql Queries </a></li>
+            <li><a href="services.html#Web-App"> Web App </a></li>
+
+        </ul>
+
+        <!-- Dropdown Structure mobile tablet -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="services.html#Web-Development"> Web Development </a></li>
+            <li><a href="services.html#Web-Designe"> Web Designe </a></li>
+
+            <li class="divider"></li>
+
+            <li><a href="services.html#Fixing-Bugs"> Fixing Bugs </a></li>
+
+            <li class="divider"></li>
+            <li><a href="services.html#Sql-Queries"> Sql Queries </a></li>
+            <li><a href="services.html#Web-App"> Web App </a></li>
+
+        </ul>
+
+        <!--     -->
+        <ul class="sidenav" id="mobile-demo">
+
+            <li class="active"><a href="#"> Home </a></li>
+            <li><a href="about.html"> ABOUT </a></li>
+            <li><a href="portofolio.html"> PORTOFOLIO </a></li>
+
             <!-- Dropdown Trigger  -->
-          <li><a  class="dropdown-trigger white-text" href="#!" data-target="dropdown2" style=" height: 64px; "  >  Services </a></li>
-    
-          </ul>
-        </div>
-      </nav>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"> Services <i
+                        class="small material-icons white">arrow_drop_down</i> </a></li>
 
-                  <!-- Dropdown Structure desktop -->
-                  <ul id="dropdown2" class="dropdown-content">
-                    <li><a href="services.html#Web-Development"> Web Development </a></li>
-                    <li><a href="services.html#Web-Designe"> Web Designe </a></li>
-                  
-                    <li class="divider"></li>
-                  
-                    <li><a href="services.html#Fixing-Bugs"> Fixing Bugs </a></li>
-                  
-                    <li class="divider"></li>
-                    <li><a href="services.html#Sql-Queries"> Sql Queries </a></li>
-                    <li><a href="services.html#Web-App"> Web App </a></li>
-                  
-                  </ul>
-    
-            <!-- Dropdown Structure mobile tablet -->
-            <ul id="dropdown1" class="dropdown-content">
-              <li><a href="services.html#Web-Development"> Web Development </a></li>
-              <li><a href="services.html#Web-Designe"> Web Designe </a></li>
-            
-              <li class="divider"></li>
-            
-              <li><a href="services.html#Fixing-Bugs"> Fixing Bugs </a></li>
-            
-              <li class="divider"></li>
-              <li><a href="services.html#Sql-Queries"> Sql Queries </a></li>
-              <li><a href="services.html#Web-App"> Web App </a></li>
-            
-            </ul>
-    
-    <!--     --> 
-      <ul class="sidenav" id="mobile-demo">
-    
-        <li class="active" ><a href="#"> Home </a></li>
-        <li><a href="about.html"> ABOUT </a></li>
-        <li><a href="portofolio.html"> PORTOFOLIO </a></li>
-       
-       <!-- Dropdown Trigger  -->
-      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1"> Services  <i class="small material-icons white">arrow_drop_down</i> </a></li>
-   
-      </ul>
- 
-</div> 
+        </ul>
 
- <!--  Mbaron navbar -->
+    </div>
+
+    <!--  Mbaron navbar -->
 
 
 
 
- <div class="row" style="margin-bottom: 15%;" >  <!-- wall image -->
-    <div>
-        <img alt="" src="images/imagefront.jpeg" width="100%"/>
+    <div class="row" style="margin-bottom: 15%;">
+        <!-- wall image -->
+        <div>
+            <img alt="" src="images/imagefront.jpeg" width="100%" />
 
-        <div style="position: absolute; top : 20%; left: 5%;">
-            <h2> Services  </h2>
-            <p style=" font-size: 1.5rem; " >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <a class="btn-medium green-text darken-4 " href="#about" style=" font-size: 1.5rem; " > Learn more... </a>
+            <div style="position: absolute; top : 20%; left: 5%;">
+                <h2> Services </h2>
+                <p style=" font-size: 1.5rem; ">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+                <a class="btn-medium green-text darken-4 " href="#about" style=" font-size: 1.5rem; "> Learn more...
+                </a>
+            </div>
+
         </div>
 
     </div>
 
-</div>  
 
 
 
-
-<div class="row" style="margin-bottom: 5%;"  id="about">  <!-- Fillon About -->
-    <div class="col s12 l5 offset-l1" >
-        <img id="paragraphmove" class="wow slideInLeft responsive-img"  alt="" src="images/imagefront.jpeg"  width="100%" />
-    </div>
-    <div class="col s12 l5">
-        <h4 class=" wow flipInY " > Our Purpose is to Help you to Make Dreams Reality </h4>
-      
-        <div class="container">
-            <hr style="margin-left: 0px;">
-            <p>
-                The main goal of “Tech & Solutions” is to provide the best 
-                solution that is available for the best price, and that is because 
-                it believes in your dreams.  For that reason, “Tech & Solution” has 
-                gathered best technologies and adopted best 
-                practices to be able to provide nothing else except 
-                only high quality services.
-
-            </p>
+    <div class="row" style="margin-bottom: 5%;" id="about">
+        <!-- Fillon About -->
+        <div class="col s12 l5 offset-l1">
+            <img id="paragraphmove" class="wow slideInLeft responsive-img" alt="" src="images/imagefront.jpeg"
+                width="100%" />
         </div>
+        <div class="col s12 l5">
+            <h4 class=" wow flipInY "> Our Purpose is to Help you to Make Dreams Reality </h4>
 
-    </div>
-</div>    <!-- Mbaron About -->
+            <div class="container">
+                <hr style="margin-left: 0px;">
+                <p>
+                    The main goal of “Tech & Solutions” is to provide the best
+                    solution that is available for the best price, and that is because
+                    it believes in your dreams. For that reason, “Tech & Solution” has
+                    gathered best technologies and adopted best
+                    practices to be able to provide nothing else except
+                    only high quality services.
+
+                </p>
+            </div>
+
+        </div>
+    </div> <!-- Mbaron About -->
 
 
-<div class="row" style="margin-bottom: 15%;">
-    <div class="col s12 " >
-            <p style=" margin-top: 3%; margin-left: 9%; margin-right: 8%; " >
-              “Tech & Solutions” believes in your dreams. 
-              It loves to help clients to fulfill their dreams. 
-              It doesn’t meter how big or small is your dream it has his own 
-              importance. For “Tech & Solutions” your dream 
-              is like a bird that just born from the egg.
+    <div class="row" style="margin-bottom: 15%;">
+        <div class="col s12 ">
+            <p style=" margin-top: 3%; margin-left: 9%; margin-right: 8%; ">
+                “Tech & Solutions” believes in your dreams.
+                It loves to help clients to fulfill their dreams.
+                It doesn’t meter how big or small is your dream it has his own
+                importance. For “Tech & Solutions” your dream
+                is like a bird that just born from the egg.
 
 
             </p>
             <p style=" margin-top: 3%; margin-left: 9%; margin-right: 8%; ">
-                If you see the reviews, you will see the good 
-                impressions of the clients. This fact demonstrates the 
-                devotion of “Tech & Solutions” to the clients and their projects. 
-                “Tech & Solutions” is devoted to inform and discus every 
+                If you see the reviews, you will see the good
+                impressions of the clients. This fact demonstrates the
+                devotion of “Tech & Solutions” to the clients and their projects.
+                “Tech & Solutions” is devoted to inform and discus every
                 mile stone of the projects in weekly meeting with the clients.
-                
+
                 Always open to new projects and challenges.
-                <br> 
+                <br>
                 Reach out to rapajglen96@gmail.com to connect!
 
 
 
             </p>
-    </div>
-</div>   <!-- Mbaron About -->
+        </div>
+    </div> <!-- Mbaron About -->
 
 
 
-<div class="row" style="margin-bottom: 0px;" id="work-proces">  <!--  Fillon  Work Process  -->
-    <div class="col s12" style=" background-color :#6eac86;">
-        <div class="container" >
-            <h4 class="white-text" style="margin-top: 4%;">  Work Process </h4>
-            <hr style="width: 15%;"/>
-            <p class="white-text" style="margin-top: 4%;" >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Nunc rutrum dui et venenatis imperdiet. 
-                Sed magna felis, rhoncus eget porta dignissim, 
-                vulputate in sapien. Suspendisse tempor arcu ligula. 
-            </p>
+    <div class="row" style="margin-bottom: 0px;" id="work-proces">
+        <!--  Fillon  Work Process  -->
+        <div class="col s12" style=" background-color :#6eac86;">
+            <div class="container">
+                <h4 class="white-text" style="margin-top: 4%;"> Work Process </h4>
+                <hr style="width: 15%;" />
+                <p class="white-text" style="margin-top: 4%;">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc rutrum dui et venenatis imperdiet.
+                    Sed magna felis, rhoncus eget porta dignissim,
+                    vulputate in sapien. Suspendisse tempor arcu ligula.
+                </p>
+            </div>
         </div>
     </div>
-</div>
 
 
-<div class="row" style="margin-bottom: 15%; padding-bottom: 3%; background-color :#6eac86; " > 
-    <div class="col s3 l3 offset-l1 offset-s5 " style=" margin-bottom: 5%;" >
-        <i class="wow slideInLeft large material-icons blue-text white lighten-3 circle">show_chart</i>
-        <br/>
-        <h5 class="wow slideInLeft white-text">Strategy</h5>
+    <div class="row" style="margin-bottom: 15%; padding-bottom: 3%; background-color :#6eac86; ">
+        <div class="col s3 l3 offset-l1 offset-s5 " style=" margin-bottom: 5%;">
+            <i class="wow slideInLeft large material-icons blue-text white lighten-3 circle">show_chart</i>
+            <br />
+            <h5 class="wow slideInLeft white-text">Strategy</h5>
+        </div>
+
+        <div class="col s3 l3 offset-s5 " style=" margin-bottom: 5%;">
+            <i class="wow slideInLeft large material-icons blue-text white lighten-3 circle">edit</i>
+            <br />
+            <h5 class="wow slideInLeft white-text">Design</h5>
+        </div>
+
+        <div class="col s3 l3 offset-s5 " style=" margin-bottom: 5%;">
+            <i class="wow slideInLeft large material-icons blue-text white lighten-3 circle">build</i>
+            <br />
+            <h5 class="wow slideInLeft white-text">Development</h5>
+        </div>
+
     </div>
 
-    <div class="col s3 l3 offset-s5 " style=" margin-bottom: 5%;" >
-        <i class="wow slideInLeft large material-icons blue-text white lighten-3 circle">edit</i>
-        <br/>
-        <h5 class="wow slideInLeft white-text">Design</h5>
-    </div>
 
-    <div class="col s3 l3 offset-s5 " style=" margin-bottom: 5%;" >
-        <i class="wow slideInLeft large material-icons blue-text white lighten-3 circle">build</i>
-        <br/>
-        <h5 class="wow slideInLeft white-text">Development</h5>
-    </div>
-
-</div>
+    <!-- Fillon pjesa e arritjeve -->
 
 
-<!-- Fillon pjesa e arritjeve -->
+    <div id="arritje1" class="achivements col l12 hide-on-small-only show-on-medium-and-up"
+        style="padding-bottom: 15%; ">
+        <!-- Fillon pjesa e arritjeve -->
+        <div class="parallax-container ">
+            <div class="parallax">
 
+                <img src="images/achivements.jpeg">
 
-    <div id="arritje1"  class="achivements col l12 hide-on-small-only show-on-medium-and-up" style="padding-bottom: 15%; " >   <!-- Fillon pjesa e arritjeve -->
-		<div class="parallax-container " >  
-			<div class="parallax">
-		
-				<img src="images/achivements.jpeg">
-			
-				<div class="row" style=" margin-top: 5%; " >    <!-- ska mbaruar  -->
-				  
-					<div class="col s12 m12 l12 achivement-sub-container" >
-					  
-						<div class="custom-icon  " > <!-- col s12 m6 l3 Fillon Card 1 -->
-				
-						  <i class="white-text medium material-icons">build</i>
-						  <br/>
-						  <h5 class="white-text" > Web Development </h5>
-						  <br/>
-						  <span class="white-text WD" > 200 </span>
-				
-						</div>   <!-- Mbaron Card 1 -->
-				
-						<div class="custom-icon " > <!-- col s12 m6 l3 Fillon Card 2 -->
-				
-						  <i class="white-text medium material-icons">edit</i>
-						  <br/>
-						  <h5 class="white-text " > Web Designe </h5>
-						  <br/>
-						  <span class="white-text WDE" > 110 </span>
-				
-						</div>   <!-- Mbaron Card 2 -->
-				
-						<div class="custom-icon  " > <!--col s12 m6 l3  Fillon Card 3 -->
-				
-						  <i class="white-text medium material-icons">filter_drama</i>
-						  <br/>
-						  <h5 class="white-text" > API </h5>
-						  <br/>
-						  <span class="white-text API" > 30 </span>
-				
-						</div>   <!-- Mbaron Card 3 -->
-				
-						<div class="custom-icon  " > <!-- col s12 m6 l3 Fillon Card 4 -->
-				
-						  <i class=" white-text medium material-icons">code</i>
-						  <br/>
-						  <h5 class="white-text" > CMS </h5>
-						  <br/>
-						  <span class="white-text CMS" > 100 </span>
-				
-						</div>   <!-- Mbaron Card 4 -->
-					</div>
-			
-				</div>
-			</div>
-		
-		</div>   
-    </div>   <!-- Mbaron pjesa e arritjeve -->
+                <div class="row" style=" margin-top: 5%; ">
+                    <!-- ska mbaruar  -->
 
+                    <div class="col s12 m12 l12 achivement-sub-container">
 
+                        <div class="custom-icon  ">
+                            <!-- col s12 m6 l3 Fillon Card 1 -->
 
-<!-- Fillon pjesa e arritjeve per telefona -->
+                            <i class="white-text medium material-icons">build</i>
+                            <br />
+                            <h5 class="white-text"> Web Development </h5>
+                            <br />
+                            <span class="white-text WD"> 200 </span>
 
-    <div id="arritje1"  class="achivements col s12 show-on-small hide-on-med-and-up" style="padding-bottom: 15%; " >   
-		<div class="parallax-container " >  
-			<div class="parallax">
-		
-				<img src="images/achivements.jpeg">
-			
-				<div style="display: flex; flex-direction: column; " >
-				
-				<div class="row row-padding" >
-				  
-					<div class="col s3 offset-s5  " > <!-- Fillon Card 1 -->
-			
-					  <i class="white-text medium material-icons">build</i>
-					  <br/>
-					  <h5 class="white-text" > Web Development </h5>
-					  <br/>
-					  <span class="white-text WD" > 200 </span>
-			
-					</div>   <!-- Mbaron Card 1 -->
-					
-				</div>
-				
-				<div class="row row-padding" >
-			
-					<div class="col s3 offset-s5  " > <!--  Fillon Card 2 -->
-			
-					  <i class="white-text medium material-icons">edit</i>
-					  <br/>
-					  <h5 class="white-text " > Web Designe </h5>
-					  <br/>
-					  <span class="white-text WDE" > 110 </span>
-			
-					</div>   <!-- Mbaron Card 2 -->
-			
-				</div>
-				
-				<div class="row row-padding" >
-				
-					<div class="col s3 offset-s5 " > <!--  Fillon Card 3 -->
-			
-					  <i class="white-text medium material-icons">filter_drama</i>
-					  <br/>
-					  <h5 class="white-text" > API </h5>
-					  <br/>
-					  <span class="white-text API" > 30 </span>
-			
-					</div>   <!-- Mbaron Card 3 -->
-			
-				</div>
-			
-				<div class="row row-padding" >
-					<div class="col s3 offset-s5 " > <!--  Fillon Card 4 -->
-			
-					  <i class=" white-text medium material-icons">code</i>
-					  <br/>
-					  <h5 class="white-text" > CMS </h5>
-					  <br/>
-					  <span class="white-text CMS" > 100 </span>
-			
-					</div>   <!-- Mbaron Card 4 -->
-				</div>
-				
-				</div>
-			
-				</div>
-			</div>
-		
-		</div>   
-    </div>   <!-- Mbaron pjesa e arritjeve per telefona -->
+                        </div> <!-- Mbaron Card 1 -->
 
+                        <div class="custom-icon ">
+                            <!-- col s12 m6 l3 Fillon Card 2 -->
+                            <i class="white-text medium material-icons">edit</i>
+                            <br />
+                            <h5 class="white-text "> Web Designe </h5>
+                            <br />
+                            <span class="white-text WDE"> 110 </span>
+                        </div> <!-- Mbaron Card 2 -->
 
-
-
-<!--  Fillon Shkruaj mesazhin dhe kontakt -->
-<div class="row" style="margin-bottom: 10%;">
-  <h4 class=" movement " > Want to work with us? </h4>
-  <span style=" margin-left: 40%; " > Send us a Mesage </span>
-</div>
-
-<div class="row" style="margin-bottom: 15%;" id="mesage">
-
-  <div class="col s12 " >  <!-- Fillon mesazhi  -->
-    <span style=" float: left; color: white; font-weight: 400; "  class=" badge red darken-3 ">  Meages temporarly deactivated for maintace purpose!  </span> <br>
-	<span style=" float: left; color: white; font-weight: 400; "  class=" badge green darken-3 ">  Meage us at : rapajglen96@gmail.com  </span> <br>         
-             
-      <!-- 
-      <div id="posting-data-form">
-        
-                action="mesazhet"  
-        -->
-                  <form action="#"  method="post" >
-                     <input type="hidden" name="_token" value="Kj73jFqi9etQ898ohQ6ZYFy4AAtlNKtKEBA37Lso" />
-                     
-                
-                    <div class="input-field col s12 l6">
-                      <input type="text" name="Subjekti" id="subjekti" />
-                      <label for = "subjekti" >  <i class="fa fa-envelope-o " style=" color: blue;"></i> Subject </label> 
+                        <div class="custom-icon  ">
+                            <!--col s12 m6 l3  Fillon Card 3 -->
+                            <i class="white-text medium material-icons">filter_drama</i>
+                            <br />
+                            <h5 class="white-text"> API </h5>
+                            <br />
+                            <span class="white-text API"> 30 </span>
+                        </div> <!-- Mbaron Card 3 -->
+                        <div class="custom-icon  ">
+                            <!-- col s12 m6 l3 Fillon Card 4 -->
+                            <i class=" white-text medium material-icons">code</i>
+                            <br />
+                            <h5 class="white-text"> CMS </h5>
+                            <br />
+                            <span class="white-text CMS"> 100 </span>
+                        </div> <!-- Mbaron Card 4 -->
                     </div>
-                 
-        
-                      <div class="input-field col s12 l6">
-                        <input id="mesazhi" type="text" class="validate" name="mesazhi" >
-                        <label for="mesazhi"  > <i class="fa fa-pencil" style=" color: blue;" ></i> Mesage </label>
-                      </div>
-                  
-                    
-                    <button id="send-sms" class="btn waves-effect waves-light blue darken-3" type="submit" name="action" style=" color: whitesmoke; ">
-                      Send Mesage
-                        <i class="fa fa-arrow-circle-o-up" ></i>  
-                    </button>
-        
-                   
-                    </form>
-        
-              
+                </div>
+            </div>
+        </div>
+    </div> <!-- Mbaron pjesa e arritjeve -->
 
-</div>  <!--  Mbaron Shkruaj mesazhin  -->
+    <!-- Fillon pjesa e arritjeve per telefona -->
+    <div id="arritje1" class="achivements col s12 show-on-small hide-on-med-and-up" style="padding-bottom: 15%; ">
+        <div class="parallax-container ">
+            <div class="parallax">
+                <img src="images/achivements.jpeg">
 
-</div>
+                <div style="display: flex; flex-direction: column; ">
+                    <div class="row row-padding">
+                        <div class="col s3 offset-s5  ">
+                            <!-- Fillon Card 1 -->
+                            <i class="white-text medium material-icons">build</i>
+                            <br />
+                            <h5 class="white-text"> Web Development </h5>
+                            <br />
+                            <span class="white-text WD"> 200 </span>
+                        </div> <!-- Mbaron Card 1 -->
 
-<!--  Mbaron Shkruaj mesazhin dhe kontakt -->
+                    </div>
 
+                    <div class="row row-padding">
+                        <div class="col s3 offset-s5  ">
+                            <!--  Fillon Card 2 -->
+                            <i class="white-text medium material-icons">edit</i>
+                            <br />
+                            <h5 class="white-text "> Web Designe </h5>
+                            <br />
+                            <span class="white-text WDE"> 110 </span>
+                        </div> <!-- Mbaron Card 2 -->
+                    </div>
 
+                    <div class="row row-padding">
+                        <div class="col s3 offset-s5 ">
+                            <!--  Fillon Card 3 -->
+                            <i class="white-text medium material-icons">filter_drama</i>
+                            <br />
+                            <h5 class="white-text"> API </h5>
+                            <br />
+                            <span class="white-text API"> 30 </span>
 
+                        </div> <!-- Mbaron Card 3 -->
+                    </div>
 
+                    <div class="row row-padding">
+                        <div class="col s3 offset-s5 ">
+                            <!--  Fillon Card 4 -->
+                            <i class=" white-text medium material-icons">code</i>
+                            <br />
+                            <h5 class="white-text"> CMS </h5>
+                            <br />
+                            <span class="white-text CMS"> 100 </span>
 
- <footer class="page-footer black">  <!-- duhen bere linqet -->
-  <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">Footer Content</h5>
-        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-      </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text"> Services </h5>
-        <ul>
-          <li><a class="grey-text text-lighten-3" href="services.html#Web-Development">Web Development</a></li>
-          <li><a class="grey-text text-lighten-3" href="services.html#Web-Designe">Web Designe</a></li>
-          <li><a class="grey-text text-lighten-3" href="services.html#Fixing-Bugs">Fixing Bugs </a></li>
-          <li><a class="grey-text text-lighten-3" href="services.html#Sql-Queries">Sql Queries</a></li>
-            <li><a class="grey-text text-lighten-3" href="services.html#Web-App">Web App</a></li>
-        </ul>
-      </div>
+                        </div> <!-- Mbaron Card 4 -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container">
-    © 2014 Tech & Solutions
-    <a style=" padding: 2%; " class="grey-text text-lighten-4 right" href="about.html">  ABOUT  </a>
-    <a style=" padding: 2%; " class="grey-text text-lighten-4 right" href="portofolio.html">  PORTOFOLIO  </a>
+    </div> <!-- Mbaron pjesa e arritjeve per telefona -->
+
+    <div class="row" style="margin-bottom: 10%;">
+        <h4 class=" movement "> Want to work with us? </h4>
+        <span style=" margin-left: 40%; "> Send us a Mesage </span>
     </div>
-  </div>
-</footer>
 
+    <div class="row" style="margin-bottom: 15%;" id="mesage">
 
+        <div class="col s12 ">
+            <!-- Fillon mesazhi  -->
+            <span style=" float: left; color: white; font-weight: 400; " class=" badge red darken-3 "> Meages temporarly
+                deactivated for maintace purpose!
+            </span> <br>
+            <span style=" float: left; color: white; font-weight: 400; " class=" badge green darken-3 "> Meage us at :
+                rapajglen96@gmail.com
+            </span> <br>
 
- 
+            <form action="#" method="post">
+                <input type="hidden" name="_token" value="Kj73jFqi9etQ898ohQ6ZYFy4AAtlNKtKEBA37Lso" />
 
-  <!--  
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" >  </script>
- -->
- 
-    <!--  
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>       
-   -->
-<!--  --> 
-   <script src="js/jquery-2.2.3.min.js"></script>  
-  
-   <script src="js/materialize.js"></script>  
-   <!--
-   <script src="js/popmotion.global.min.js"></script>  
-  -->
-  
-   <!-- Wow.js animation library   WOW-master/dist/wow.js -->
-  <script src="js/wow.min.js"></script>
-	<script>
-		wow = new WOW(
-		  {
-			animateClass: 'animated',
-			offset:       100,
+                <div class="input-field col s12 l6">
+                    <input type="text" name="Subjekti" id="subjekti" />
+                    <label for="subjekti"> <i class="fa fa-envelope-o " style=" color: blue;"></i> Subject </label>
+                </div>
 
-		  }
-		);
-		
-		/*
-				offset:       100,
-			callback:     function(box) {
-			  console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-		*/
-		wow.init();
-	</script>
-  
+                <div class="input-field col s12 l6">
+                    <input id="mesazhi" type="text" class="validate" name="mesazhi">
+                    <label for="mesazhi"> <i class="fa fa-pencil" style=" color: blue;"></i> Mesage </label>
+                </div>
 
-  <script type="text/javascript">
+                <button id="send-sms" class="btn waves-effect waves-light blue darken-3" type="submit" name="action"
+                    style=" color: whitesmoke; ">
+                    Send Mesage
+                    <i class="fa fa-arrow-circle-o-up"></i>
+                </button>
+            </form>
+        </div>
+    </div>
 
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Footer Content</h5>
+                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                        content.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text"> Services </h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="services.html#Web-Development">Web Development</a>
+                        </li>
+                        <li><a class="grey-text text-lighten-3" href="services.html#Web-Designe">Web Designe</a></li>
+                        <li><a class="grey-text text-lighten-3" href="services.html#Fixing-Bugs">Fixing Bugs </a></li>
+                        <li><a class="grey-text text-lighten-3" href="services.html#Sql-Queries">Sql Queries</a></li>
+                        <li><a class="grey-text text-lighten-3" href="services.html#Web-App">Web App</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Tech & Solutions
+                <a style=" padding: 2%; " class="grey-text text-lighten-4 right" href="about.html"> ABOUT </a>
+                <a style=" padding: 2%; " class="grey-text text-lighten-4 right" href="portofolio.html"> PORTOFOLIO </a>
+            </div>
+        </div>
+    </footer>
 
-
-
-    
-  function ChangingValue( borderNumber, clsname ) {
-
-var pos = 0;
-clsname = '.' + clsname;
-  var id ;
-
-id = setInterval( chaige , 10 );
-
-  function chaige(  ) {
-   
-      if ( pos == borderNumber ) {
-       
-   clearInterval(id);
-  } else {
-    pos++; 
-   var mySpanNodes = document.querySelectorAll(clsname);
-   
-   for( let i = 0 ; i < mySpanNodes.length ; i++ ){
-    mySpanNodes[i].innerHTML = pos ;
-   }
-
-  }
-
-}
-    
-}
-
-
-
-    //const { styler, spring, stagger, value  } = window.popmotion;
-
-let leftRightFirstTime = true;
- let leftRight = ( id ) => {
-
- // console.log( id );
- let serviceText = document.querySelectorAll(id);
-
- if( leftRightFirstTime ){
- serviceText.forEach( (ball) =>{
-       // console.log( ' serviceText :  ', ball );
-
-       const divStyler = styler(ball);
-       const ballXY = value({ x: 0, y: 0 }, divStyler.set);
-
-
-         spring({
-         from: { x: -1000, y: 0 },
-         to: { x: 0, y: 0 },
-         stiffness: 200,
-         mass: 1,
-         damping: 40
-
-         }).start(ballXY);
-
-
-             });
-             leftRightFirstTime = false;
-           }
-
- }
-
-
-
-// animate paragraphs while scrolling
-    window.addEventListener('scroll', (e)=>{
-
-   const positiony = window.scrollY ;
-
-    const smsHeght = $('#mesage').position();
-    const aboutHeght = $('#about').position();
-    const workHeght = $('#work-proces').position();
-    const newArritjeHeght = $('#arritje1').position();
-    const arritjeHeght = $('#arritje').position();
-
-/* 
-  animating element while scrolling  
-*/
-let temp = ( aboutHeght.top + workHeght.top ) * 0.7 ;
- 
-
-  if( positiony >  aboutHeght.top && positiony < workHeght.top ){
-  leftRight('#paragraphmove');
-  }
-
-  if( positiony >  workHeght.top ){
- // console.log(' In Work Process ');
-  fillBarsChangeNr();
-
-  }
-
-
-
-});
-
-var firstTimeCheckAchivements = true ;
-let fillBarsChangeNr = () => {
-
-      if( firstTimeCheckAchivements ){
-        var elem = $('.CMS'); 
-        borderNumber = elem[0].innerText ;
-        ChangingValue( borderNumber, elem[0].className);
-
-        elem = $('.API'); 
-        borderNumber = elem[0].innerText ;
-        ChangingValue( borderNumber, elem[0].className );
-
-        elem = $('.WD'); 
-        borderNumber = elem[0].innerText ;
-        ChangingValue( borderNumber, elem[0].className );
-
-        elem = $('.WDE'); 
-        borderNumber = elem[0].innerText ;
-        ChangingValue( borderNumber, elem[0].className );
-
-        firstTimeCheckAchivements = false ;
-      }
-  }
-
-  $(document).ready( function(){
-
-
-    // dropdown activation
-    $(".dropdown-trigger").dropdown( { hover: true,
-    constrainWidth: false } );  
-
-    // Side nav activation
-    $('.sidenav').sidenav();
-
-    });
-
-
-
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <!-- Wow.js animation library   WOW-master/dist/wow.js -->
+    <script src="js/wow.min.js"></script>
+    <script>
+        wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset: 100,
+            }
+        );
+        wow.init();
     </script>
 
 
+    <script type="text/javascript">
 
-    </body>
+        function ChangingValue(borderNumber, clsname) {
+            var pos = 0;
+            clsname = '.' + clsname;
+            var id;
+            id = setInterval(chaige, 10);
+            function chaige() {
+                if (pos == borderNumber) {
+                    clearInterval(id);
+                } else {
+                    pos++;
+                    var mySpanNodes = document.querySelectorAll(clsname);
+                    for (let i = 0; i < mySpanNodes.length; i++) {
+                        mySpanNodes[i].innerHTML = pos;
+                    }
+                }
+            }
+        }
+
+        //const { styler, spring, stagger, value  } = window.popmotion;
+
+        let leftRightFirstTime = true;
+        let leftRight = (id) => {
+            let serviceText = document.querySelectorAll(id);
+            if (leftRightFirstTime) {
+                serviceText.forEach((ball) => {
+                    const divStyler = styler(ball);
+                    const ballXY = value({ x: 0, y: 0 }, divStyler.set);
+                    spring({
+                        from: { x: -1000, y: 0 },
+                        to: { x: 0, y: 0 },
+                        stiffness: 200,
+                        mass: 1,
+                        damping: 40
+
+                    }).start(ballXY);
+                });
+                leftRightFirstTime = false;
+            }
+
+        }
+
+        window.addEventListener('scroll', (e) => {
+
+            const positiony = window.scrollY;
+
+            const smsHeght = $('#mesage').position();
+            const aboutHeght = $('#about').position();
+            const workHeght = $('#work-proces').position();
+            const newArritjeHeght = $('#arritje1').position();
+            const arritjeHeght = $('#arritje').position();
+
+            /* 
+              animating element while scrolling  
+            */
+            let temp = (aboutHeght.top + workHeght.top) * 0.7;
+            if (positiony > aboutHeght.top && positiony < workHeght.top) {
+                leftRight('#paragraphmove');
+            }
+            if (positiony > workHeght.top) {
+                fillBarsChangeNr();
+            }
+        });
+
+        var firstTimeCheckAchivements = true;
+        let fillBarsChangeNr = () => {
+
+            if (firstTimeCheckAchivements) {
+                var elem = $('.CMS');
+                borderNumber = elem[0].innerText;
+                ChangingValue(borderNumber, elem[0].className);
+
+                elem = $('.API');
+                borderNumber = elem[0].innerText;
+                ChangingValue(borderNumber, elem[0].className);
+
+                elem = $('.WD');
+                borderNumber = elem[0].innerText;
+                ChangingValue(borderNumber, elem[0].className);
+
+                elem = $('.WDE');
+                borderNumber = elem[0].innerText;
+                ChangingValue(borderNumber, elem[0].className);
+
+                firstTimeCheckAchivements = false;
+            }
+        }
+
+        $(document).ready(function () {
+
+
+            // dropdown activation
+            $(".dropdown-trigger").dropdown({
+                hover: true,
+                constrainWidth: false
+            });
+
+            // Side nav activation
+            $('.sidenav').sidenav();
+
+        });
+    </script>
+
+</body>
 </html>
